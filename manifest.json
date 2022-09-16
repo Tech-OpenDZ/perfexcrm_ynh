@@ -1,0 +1,51 @@
+{
+    "name": "PerfexCRM",
+    "id": "perfexcrm",
+    "packaging_format": 1,
+    "description": {
+        "en": "Customer Relationship & Project Management",
+        "fr": "Relation client et gestion de projet"
+    },
+
+    "version": "2.9.4~ynh",
+    "url": "https://www.perfexcrm.com/",
+    "upstream": {
+        "license": "Apache-2.0",
+        "website": "https://www.perfexcrm.com/",
+        "demo": "https://demo.perfexcrm.com/"
+    },
+    "license": "Apache-2.0",
+    "maintainer": {
+       "name": "Noureddine HADDAG",
+       "email": "contact@nhaddag.net",
+       "url": "https://nhaddag.net"
+    },
+     
+    "requirements": {
+        "yunohost": ">= 4.3.0"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "mysql",
+        "php7.4-fpm"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/crm",
+                "default": "/crm"
+            },
+            {
+                "name": "admin",
+                "type": "user"
+            }
+        ]
+    }
+}
