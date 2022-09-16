@@ -7,7 +7,7 @@
         "fr": "Relation client et gestion de projet"
     },
 
-    "version": "2.9.4~ynh",
+    "version": "2.9.4~ynh1",
     "url": "https://www.perfexcrm.com/",
     "upstream": {
         "license": "Apache-2.0",
